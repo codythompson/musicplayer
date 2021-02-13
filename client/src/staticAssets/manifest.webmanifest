@@ -1,0 +1,12 @@
+{
+  "name": "musicplayer",
+  "start_url": ".",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "url:./assets/nope.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}

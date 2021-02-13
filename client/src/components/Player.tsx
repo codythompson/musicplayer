@@ -1,9 +1,9 @@
 import React, { ReactElement, useEffect, useState } from "react"
 import { AudioCache } from "../controller/AudioCache"
 
-async function go() {
-  await AudioCache
-}
+// async function go() {
+//   await AudioCache.debug()
+// }
 
 function play(audioEle:HTMLAudioElement) {
   audioEle.play()
@@ -30,8 +30,8 @@ export function Player(): ReactElement  {
     audioEle.src = "https://blobshroom.s3-us-west-2.amazonaws.com/assets/audio/mp3/king_james_vr.mp3"
     return (
       <div>
-        <button onClick={play.bind(this, audioEle)}>play</button>
-        <button onClick={pause.bind(this, audioEle)}>pause</button>
+        <button onClick={play.bind({}, audioEle)}>play</button>
+        <button onClick={pause.bind({}, audioEle)}>pause</button>
       </div>
     )
   }
